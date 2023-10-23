@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		336D74482AE58476008E19E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74472AE58476008E19E6 /* AppDelegate.swift */; };
+		336D744A2AE58476008E19E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74492AE58476008E19E6 /* SceneDelegate.swift */; };
+		336D744C2AE58476008E19E6 /* FilmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D744B2AE58476008E19E6 /* FilmeViewController.swift */; };
+		336D744F2AE58476008E19E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336D744D2AE58476008E19E6 /* Main.storyboard */; };
+		336D74512AE58476008E19E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336D74502AE58476008E19E6 /* Assets.xcassets */; };
+		336D74542AE58476008E19E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336D74522AE58476008E19E6 /* LaunchScreen.storyboard */; };
+		336D74662AE58717008E19E6 /* FilmePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74652AE58717008E19E6 /* FilmePresenter.swift */; };
+		336D746C2AE587B1008E19E6 /* PesquisaFilmeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D746B2AE587B1008E19E6 /* PesquisaFilmeCollectionViewCell.swift */; };
+		336D746E2AE587E2008E19E6 /* PesquisaFimeCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D746D2AE587E2008E19E6 /* PesquisaFimeCollectionViewCellScreen.swift */; };
+		336D74702AE5880B008E19E6 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D746F2AE5880B008E19E6 /* MovieService.swift */; };
+		336D74722AE58842008E19E6 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74712AE58842008E19E6 /* Movies.swift */; };
+		336D74742AE58890008E19E6 /* PesquisaFilmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74732AE58890008E19E6 /* PesquisaFilmeViewController.swift */; };
+		336D74762AE588D0008E19E6 /* PesquisaFilmeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74752AE588D0008E19E6 /* PesquisaFilmeScreen.swift */; };
+		336D74782AE588FD008E19E6 /* PesquisaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74772AE588FD008E19E6 /* PesquisaInteractor.swift */; };
+		336D747A2AE5892D008E19E6 /* PesquisaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74792AE5892D008E19E6 /* PesquisaPresenter.swift */; };
+		336D747C2AE5899B008E19E6 /* DetalhesFilmeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D747B2AE5899B008E19E6 /* DetalhesFilmeScreen.swift */; };
+		336D747E2AE589C5008E19E6 /* DetalhesFilmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D747D2AE589C5008E19E6 /* DetalhesFilmeViewController.swift */; };
+		336D74802AE58B24008E19E6 /* FilmeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D747F2AE58B24008E19E6 /* FilmeInteractor.swift */; };
+		336D74832AE5A806008E19E6 /* FilmeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74812AE5A806008E19E6 /* FilmeCollectionViewCell.swift */; };
+		336D74842AE5A806008E19E6 /* FilmeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336D74822AE5A806008E19E6 /* FilmeCollectionViewCell.xib */; };
+		336D74862AE5B1BF008E19E6 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D74852AE5B1BF008E19E6 /* Extension + UIView.swift */; };
+		652976BD7C07CED08D8A7752 /* Pods_ProjetoVIPBootcampSantander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F0048CF11E027390DE7A74 /* Pods_ProjetoVIPBootcampSantander.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		336D74442AE58476008E19E6 /* ProjetoVIPBootcampSantander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoVIPBootcampSantander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		336D74472AE58476008E19E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		336D74492AE58476008E19E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		336D744B2AE58476008E19E6 /* FilmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeViewController.swift; sourceTree = "<group>"; };
+		336D744E2AE58476008E19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		336D74502AE58476008E19E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		336D74532AE58476008E19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		336D74552AE58476008E19E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336D74652AE58717008E19E6 /* FilmePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmePresenter.swift; sourceTree = "<group>"; };
+		336D746B2AE587B1008E19E6 /* PesquisaFilmeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaFilmeCollectionViewCell.swift; sourceTree = "<group>"; };
+		336D746D2AE587E2008E19E6 /* PesquisaFimeCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaFimeCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		336D746F2AE5880B008E19E6 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		336D74712AE58842008E19E6 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		336D74732AE58890008E19E6 /* PesquisaFilmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaFilmeViewController.swift; sourceTree = "<group>"; };
+		336D74752AE588D0008E19E6 /* PesquisaFilmeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaFilmeScreen.swift; sourceTree = "<group>"; };
+		336D74772AE588FD008E19E6 /* PesquisaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaInteractor.swift; sourceTree = "<group>"; };
+		336D74792AE5892D008E19E6 /* PesquisaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaPresenter.swift; sourceTree = "<group>"; };
+		336D747B2AE5899B008E19E6 /* DetalhesFilmeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesFilmeScreen.swift; sourceTree = "<group>"; };
+		336D747D2AE589C5008E19E6 /* DetalhesFilmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesFilmeViewController.swift; sourceTree = "<group>"; };
+		336D747F2AE58B24008E19E6 /* FilmeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeInteractor.swift; sourceTree = "<group>"; };
+		336D74812AE5A806008E19E6 /* FilmeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeCollectionViewCell.swift; sourceTree = "<group>"; };
+		336D74822AE5A806008E19E6 /* FilmeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmeCollectionViewCell.xib; sourceTree = "<group>"; };
+		336D74852AE5B1BF008E19E6 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		44F0048CF11E027390DE7A74 /* Pods_ProjetoVIPBootcampSantander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetoVIPBootcampSantander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4299353A28BF172D1703579 /* Pods-ProjetoVIPBootcampSantander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoVIPBootcampSantander.release.xcconfig"; path = "Target Support Files/Pods-ProjetoVIPBootcampSantander/Pods-ProjetoVIPBootcampSantander.release.xcconfig"; sourceTree = "<group>"; };
+		F3B7314665E9F197178AF4FC /* Pods-ProjetoVIPBootcampSantander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoVIPBootcampSantander.debug.xcconfig"; path = "Target Support Files/Pods-ProjetoVIPBootcampSantander/Pods-ProjetoVIPBootcampSantander.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		336D74412AE58476008E19E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652976BD7C07CED08D8A7752 /* Pods_ProjetoVIPBootcampSantander.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		336D743B2AE58476008E19E6 = {
+			isa = PBXGroup;
+			children = (
+				336D74462AE58476008E19E6 /* ProjetoVIPBootcampSantander */,
+				336D74452AE58476008E19E6 /* Products */,
+				F33A9004F7B4E92A7125BC85 /* Pods */,
+				F7CB0D96092FF608EA48F048 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		336D74452AE58476008E19E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				336D74442AE58476008E19E6 /* ProjetoVIPBootcampSantander.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		336D74462AE58476008E19E6 /* ProjetoVIPBootcampSantander */ = {
+			isa = PBXGroup;
+			children = (
+				336D74602AE58698008E19E6 /* Cell */,
+				336D745F2AE5868C008E19E6 /* Service */,
+				336D745E2AE58686008E19E6 /* Model */,
+				336D745D2AE5867A008E19E6 /* Pesquisar */,
+				336D745C2AE58670008E19E6 /* Detalhes */,
+				336D745B2AE58660008E19E6 /* Home */,
+				336D74472AE58476008E19E6 /* AppDelegate.swift */,
+				336D74492AE58476008E19E6 /* SceneDelegate.swift */,
+				336D744D2AE58476008E19E6 /* Main.storyboard */,
+				336D74502AE58476008E19E6 /* Assets.xcassets */,
+				336D74522AE58476008E19E6 /* LaunchScreen.storyboard */,
+				336D74552AE58476008E19E6 /* Info.plist */,
+				336D74852AE5B1BF008E19E6 /* Extension + UIView.swift */,
+			);
+			path = ProjetoVIPBootcampSantander;
+			sourceTree = "<group>";
+		};
+		336D745B2AE58660008E19E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				336D744B2AE58476008E19E6 /* FilmeViewController.swift */,
+				336D747F2AE58B24008E19E6 /* FilmeInteractor.swift */,
+				336D74652AE58717008E19E6 /* FilmePresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		336D745C2AE58670008E19E6 /* Detalhes */ = {
+			isa = PBXGroup;
+			children = (
+				336D747B2AE5899B008E19E6 /* DetalhesFilmeScreen.swift */,
+				336D747D2AE589C5008E19E6 /* DetalhesFilmeViewController.swift */,
+			);
+			path = Detalhes;
+			sourceTree = "<group>";
+		};
+		336D745D2AE5867A008E19E6 /* Pesquisar */ = {
+			isa = PBXGroup;
+			children = (
+				336D74732AE58890008E19E6 /* PesquisaFilmeViewController.swift */,
+				336D74752AE588D0008E19E6 /* PesquisaFilmeScreen.swift */,
+				336D74772AE588FD008E19E6 /* PesquisaInteractor.swift */,
+				336D74792AE5892D008E19E6 /* PesquisaPresenter.swift */,
+			);
+			path = Pesquisar;
+			sourceTree = "<group>";
+		};
+		336D745E2AE58686008E19E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				336D74712AE58842008E19E6 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		336D745F2AE5868C008E19E6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				336D746F2AE5880B008E19E6 /* MovieService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		336D74602AE58698008E19E6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				336D746B2AE587B1008E19E6 /* PesquisaFilmeCollectionViewCell.swift */,
+				336D746D2AE587E2008E19E6 /* PesquisaFimeCollectionViewCellScreen.swift */,
+				336D74812AE5A806008E19E6 /* FilmeCollectionViewCell.swift */,
+				336D74822AE5A806008E19E6 /* FilmeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F33A9004F7B4E92A7125BC85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3B7314665E9F197178AF4FC /* Pods-ProjetoVIPBootcampSantander.debug.xcconfig */,
+				E4299353A28BF172D1703579 /* Pods-ProjetoVIPBootcampSantander.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7CB0D96092FF608EA48F048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44F0048CF11E027390DE7A74 /* Pods_ProjetoVIPBootcampSantander.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		336D74432AE58476008E19E6 /* ProjetoVIPBootcampSantander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336D74582AE58476008E19E6 /* Build configuration list for PBXNativeTarget "ProjetoVIPBootcampSantander" */;
+			buildPhases = (
+				7E9C43FD97A7A0280D42AFBB /* [CP] Check Pods Manifest.lock */,
+				336D74402AE58476008E19E6 /* Sources */,
+				336D74412AE58476008E19E6 /* Frameworks */,
+				336D74422AE58476008E19E6 /* Resources */,
+				484DF71BDE38B064E08D3F56 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjetoVIPBootcampSantander;
+			productName = ProjetoVIPBootcampSantander;
+			productReference = 336D74442AE58476008E19E6 /* ProjetoVIPBootcampSantander.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		336D743C2AE58476008E19E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					336D74432AE58476008E19E6 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 336D743F2AE58476008E19E6 /* Build configuration list for PBXProject "ProjetoVIPBootcampSantander" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 336D743B2AE58476008E19E6;
+			productRefGroup = 336D74452AE58476008E19E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				336D74432AE58476008E19E6 /* ProjetoVIPBootcampSantander */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		336D74422AE58476008E19E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336D74842AE5A806008E19E6 /* FilmeCollectionViewCell.xib in Resources */,
+				336D74542AE58476008E19E6 /* LaunchScreen.storyboard in Resources */,
+				336D74512AE58476008E19E6 /* Assets.xcassets in Resources */,
+				336D744F2AE58476008E19E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		484DF71BDE38B064E08D3F56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjetoVIPBootcampSantander/Pods-ProjetoVIPBootcampSantander-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjetoVIPBootcampSantander/Pods-ProjetoVIPBootcampSantander-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjetoVIPBootcampSantander/Pods-ProjetoVIPBootcampSantander-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9C43FD97A7A0280D42AFBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjetoVIPBootcampSantander-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		336D74402AE58476008E19E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336D746E2AE587E2008E19E6 /* PesquisaFimeCollectionViewCellScreen.swift in Sources */,
+				336D74742AE58890008E19E6 /* PesquisaFilmeViewController.swift in Sources */,
+				336D74662AE58717008E19E6 /* FilmePresenter.swift in Sources */,
+				336D746C2AE587B1008E19E6 /* PesquisaFilmeCollectionViewCell.swift in Sources */,
+				336D74782AE588FD008E19E6 /* PesquisaInteractor.swift in Sources */,
+				336D744C2AE58476008E19E6 /* FilmeViewController.swift in Sources */,
+				336D747E2AE589C5008E19E6 /* DetalhesFilmeViewController.swift in Sources */,
+				336D74802AE58B24008E19E6 /* FilmeInteractor.swift in Sources */,
+				336D747C2AE5899B008E19E6 /* DetalhesFilmeScreen.swift in Sources */,
+				336D74722AE58842008E19E6 /* Movies.swift in Sources */,
+				336D747A2AE5892D008E19E6 /* PesquisaPresenter.swift in Sources */,
+				336D74482AE58476008E19E6 /* AppDelegate.swift in Sources */,
+				336D74832AE5A806008E19E6 /* FilmeCollectionViewCell.swift in Sources */,
+				336D74702AE5880B008E19E6 /* MovieService.swift in Sources */,
+				336D74862AE5B1BF008E19E6 /* Extension + UIView.swift in Sources */,
+				336D744A2AE58476008E19E6 /* SceneDelegate.swift in Sources */,
+				336D74762AE588D0008E19E6 /* PesquisaFilmeScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		336D744D2AE58476008E19E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				336D744E2AE58476008E19E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		336D74522AE58476008E19E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				336D74532AE58476008E19E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		336D74562AE58476008E19E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		336D74572AE58476008E19E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		336D74592AE58476008E19E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B7314665E9F197178AF4FC /* Pods-ProjetoVIPBootcampSantander.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UT276DC9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjetoVIPBootcampSantander/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dio-AppDesafioFinal.ProjetoVIPBootcampSantander";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		336D745A2AE58476008E19E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4299353A28BF172D1703579 /* Pods-ProjetoVIPBootcampSantander.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UT276DC9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjetoVIPBootcampSantander/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dio-AppDesafioFinal.ProjetoVIPBootcampSantander";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		336D743F2AE58476008E19E6 /* Build configuration list for PBXProject "ProjetoVIPBootcampSantander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336D74562AE58476008E19E6 /* Debug */,
+				336D74572AE58476008E19E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336D74582AE58476008E19E6 /* Build configuration list for PBXNativeTarget "ProjetoVIPBootcampSantander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336D74592AE58476008E19E6 /* Debug */,
+				336D745A2AE58476008E19E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 336D743C2AE58476008E19E6 /* Project object */;
+}

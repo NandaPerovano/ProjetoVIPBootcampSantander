@@ -1,0 +1,6 @@
+framework module Pods_ProjetoVIPBootcampSantander {
+  umbrella header "Pods-ProjetoVIPBootcampSantander-umbrella.h"
+
+  export *
+  module * { export * }
+}

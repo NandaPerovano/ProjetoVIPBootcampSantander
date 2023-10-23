@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H3l-mQ-hAo">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pesquisar-->
+        <scene sceneID="gYj-yh-CH7">
+            <objects>
+                <viewController id="lxx-mF-xli" customClass="PesquisaFilmeViewController" customModule="ProjetoVIPBootcampSantander" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="khm-d2-pqh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jsZ-h2-byQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pesquisar" image="magnifyingglass" catalog="system" id="CG5-fF-OY3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yj5-DW-9kP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="447"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="hvr-v3-u4e">
+            <objects>
+                <viewController id="y7i-og-SOC" customClass="FilmeViewController" customModule="ProjetoVIPBootcampSantander" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2DM-FR-3WU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filmes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyS-Sd-q2r">
+                                <rect key="frame" x="20" y="87" width="350" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="o6U-A4-SnR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="47"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-wl-3CN">
+                                <rect key="frame" x="0.0" y="147" width="390" height="614"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="82S-in-ArM">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TJd-dp-I8Y"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TJd-dp-I8Y" firstAttribute="trailing" secondItem="VyS-Sd-q2r" secondAttribute="trailing" constant="20" id="3Iv-BD-bzo"/>
+                            <constraint firstItem="y6U-wl-3CN" firstAttribute="leading" secondItem="TJd-dp-I8Y" secondAttribute="leading" id="Bld-Uc-QZX"/>
+                            <constraint firstItem="TJd-dp-I8Y" firstAttribute="bottom" secondItem="y6U-wl-3CN" secondAttribute="bottom" id="X4g-0e-kaU"/>
+                            <constraint firstItem="TJd-dp-I8Y" firstAttribute="trailing" secondItem="y6U-wl-3CN" secondAttribute="trailing" id="ZQv-WX-Me3"/>
+                            <constraint firstItem="VyS-Sd-q2r" firstAttribute="top" secondItem="TJd-dp-I8Y" secondAttribute="top" constant="40" id="ohf-iI-UAw"/>
+                            <constraint firstItem="y6U-wl-3CN" firstAttribute="top" secondItem="VyS-Sd-q2r" secondAttribute="bottom" id="psp-L1-J09"/>
+                            <constraint firstItem="VyS-Sd-q2r" firstAttribute="leading" secondItem="TJd-dp-I8Y" secondAttribute="leading" constant="20" id="sM8-8s-fNx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="RR1-mE-GmQ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="y6U-wl-3CN" id="t8m-Vs-qUX"/>
+                        <segue destination="egU-kT-AMC" kind="show" id="hDd-kh-yIt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAb-nr-22J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-253"/>
+        </scene>
+        <!--Detalhes Filme View Controller-->
+        <scene sceneID="4se-hO-bWn">
+            <objects>
+                <viewController id="egU-kT-AMC" customClass="DetalhesFilmeViewController" customModule="ProjetoVIPBootcampSantander" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EjK-Ru-WcC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8gn-8x-Xwu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DPf-er-7Hz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCD-OD-sv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2073" y="-243"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kCa-f2-32S">
+            <objects>
+                <tabBarController id="H3l-mQ-hAo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5ls-KW-aKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemRedColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y7i-og-SOC" kind="relationship" relationship="viewControllers" id="80a-ag-emh"/>
+                        <segue destination="lxx-mF-xli" kind="relationship" relationship="viewControllers" id="1Mm-Q9-6rK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpG-TV-klj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
